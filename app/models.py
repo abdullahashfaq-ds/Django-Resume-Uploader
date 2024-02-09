@@ -3,7 +3,7 @@ from .utils import STATE_CHOICE
 
 
 class ResumeModel(models.Model):
-    title = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
     birth = models.DateField(auto_now=False, auto_now_add=False)
     gender = models.CharField(max_length=20)
     city = models.CharField(max_length=100)
