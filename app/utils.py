@@ -1,3 +1,17 @@
+GENDER_CHOICE = (
+    ('Male', 'Male'),
+    ('Female', 'Female'),
+)
+
+CITY_CHOICE = (
+    ('Lahore', 'Lahore'),
+    ('Faisalabad', 'Faisalabad'),
+    ('Rawalpindi', 'Rawalpindi'),
+    ('Multan', 'Multan'),
+    ('Gujranwala', 'Gujranwala'),
+    ('Karachi', 'Karachi'),
+)
+
 STATE_CHOICE = (
     ('Sindh', 'Sindh'),
     ('Punjab', 'Punjab'),
