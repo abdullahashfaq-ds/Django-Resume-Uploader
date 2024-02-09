@@ -24,9 +24,11 @@ class ResumeForm(forms.ModelForm):
             'profile_img': 'Profile Image',
             'file': 'Document',
         }
+        # "form-control" is a Bootstrap class & "datepicker" is called from JS
+        # Bootstrap & JS links are added in index.html
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control'}),
-            'birth': forms.DateInput(attrs={'class': 'form-control'}),
+            'birth': forms.DateInput(attrs={'class': 'form-control', 'id': 'datepicker'}),
             'city': forms.TextInput(attrs={'class': 'form-control'}),
             'pin_code': forms.NumberInput(attrs={'class': 'form-control'}),
             'state': forms.Select(attrs={'class': 'form-control'}),
